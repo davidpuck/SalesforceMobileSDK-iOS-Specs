@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
       fmdb.source_files = 'external/fmdb/src/fmdb/FM*.{h,m}'
       fmdb.exclude_files = 'external/fmdb/src/fmdb.m'
       fmdb.xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC' }
-      fmdb.dependency 'SQLCipher/fts', '~> 3.3.1'
+      fmdb.dependency 'SQLCipher/fts', '~> 3.4.0'
   end
 
 end
